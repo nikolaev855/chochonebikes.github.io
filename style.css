@@ -6,10 +6,7 @@
 body{
   padding: 0;
   margin: 0;
-  background: rgb(39,39,39);
-  background: linear-gradient(199deg, rgb(48, 48, 48) 0%, rgba(17,17,17,1) 50%);
-  background: cover;
-  color: white;
+
 }
 #layout{
   display: flex;
@@ -34,17 +31,29 @@ body{
   flex-basis: 80%;
   padding: 20px;
   flex-wrap: wrap;
-
+}
+@media(min-width:1100px){
+  body{
+    background: rgb(39,39,39);
+    background: linear-gradient(199deg, rgb(48, 48, 48) 0%, rgba(17,17,17,1) 50%);
+    background: cover;
+    color: white;
+  }
+}
+@media(max-width:1100px){
+  body{
+    background-color:rgb(17,17,17);
+  }
 }
 @media(max-width: 640px){
   #sidebar, #content{
     flex-basis: 100%;
     border-right: 0;
   }
-  #sidebar{
+  /* #sidebar{
     height: 50%;
     overflow: hidden;
-  }
+  } */
 }
 @media(max-width: 475px){
   #sidebar{
